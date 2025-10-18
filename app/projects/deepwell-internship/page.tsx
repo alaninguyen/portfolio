@@ -1,3 +1,9 @@
+import { FadeIn } from "@/components/Motion";
+
+// then wrap the first section:
+<FadeIn as="section" className="max-w-4xl mx-auto px-6 pt-24 pb-12" y={12}>
+  {/* ...existing hero content... */}
+</FadeIn>
 export const metadata = {
   title: "DeepWell Skincare — Internship Work",
   description: "Brand, email templates, and UX/design deliverables.",
