@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: "Alani Nguyen — Product Designer",
     description:
       "Physical builds, brand systems, and web UX. Clean aesthetics + research-backed execution.",
-    images: ["/og.png"], // put /public/og.jpg (1200x630)
+    images: ["/og.png"], // file lives at /public/og.png (1200x630)
     url: "https://alani-nguyen.vercel.app",
     siteName: "Alani Nguyen — Portfolio",
     type: "website",
@@ -24,7 +24,9 @@ export const metadata: Metadata = {
       "Physical builds, brand systems, and web UX. Clean aesthetics + research-backed execution.",
     images: ["/og.png"],
   },
-  icons: { icon: "/favicon.ico" },
+  // optional: canonical for SEO
+  alternates: { canonical: "https://alani-nguyen.vercel.app" },
+  icons: { icon: "/favicon.ico" }, // app/favicon.ico or public/favicon.ico both fine
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -38,8 +40,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <div className="flex items-center gap-5 text-sm">
               <Link href="/#projects" className="opacity-80 hover:opacity-100">Projects</Link>
               <Link href="/about" className="opacity-80 hover:opacity-100">About</Link>
-              <a href="/Alani-Nguyen-Resume.pdf" className="opacity-80 hover:opacity-100">Resume</a>
-              <a href="mailto:alaninguyen@email.com" className="rounded-xl bg-white text-black px-3 py-1">
+              <a
+                href="/Alani-Nguyen-Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="opacity-80 hover:opacity-100"
+              >
+                Resume
+              </a>
+              <a
+                href="mailto:Alaninguyen27@gmail.com"
+                className="rounded-xl bg-white text-black px-3 py-1"
+              >
                 Contact
               </a>
             </div>
