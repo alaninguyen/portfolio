@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { FadeIn, FadeInSection } from "../../components/motion";
+import { FadeIn, FadeInSection } from "../../components/Motion";
 
 export const metadata = {
   title: "DeepWell Skincare — Brand & Digital Design Internship",

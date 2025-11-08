@@ -1,5 +1,5 @@
 // app/page.tsx
-import { FadeIn, FadeInSection, MotionA } from "./components/motion";
+import { FadeIn, FadeInSection, MotionA } from "./components/Motion";
 
 
 export default function Home() {
