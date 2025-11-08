@@ -26,7 +26,7 @@ export function FadeIn<E extends ElementType = "div">({
   const animate = prefersReduced ? undefined : { opacity: 1, y: 0 };
 
   const Tag = (as ?? "div") as ElementType;
-  const MotionTag = motion(Tag);
+  const MotionTag = motion.create(Tag);
 
   return (
     <MotionTag
